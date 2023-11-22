@@ -1,0 +1,11 @@
+/* font-family: 'Noto Serif JP', serif;  
+font-family: 'Montserrat', sans-serif; */
+
+h1 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: bold;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
