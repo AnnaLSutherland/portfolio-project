@@ -2,9 +2,9 @@
 font-family: 'Montserrat', sans-serif; */
 
 :root {
-  --primary-color: #e5e5e5;
-  --secondary-color: #49475b;
-  --branding-color: #d55672;
+  --primary-color: #f3f2f2;
+  --secondary-color: rgb(73, 71, 91);
+  --branding-color: #da4a69;
   --tint-color: #d6cfcb;
   --display-font-family: "Noto Serif JP", serif;
   --default-font-family: "Montserrat", sans-serif;
@@ -12,6 +12,7 @@ font-family: 'Montserrat', sans-serif; */
 
 body {
   font-family: var(--default-font-family);
+  background-color: var(--primary-color);
 }
 
 h1,
@@ -20,27 +21,41 @@ h4,
 h5 {
   font-family: var(--display-font-family);
 }
+h1 {
+  font-size: 96px;
+  font-weight: 400;
+}
 h2 {
   font-family: var(--default-font-family);
+  font-size: 30px;
+  line-height: 1.5;
+}
+h3 {
+  font-size: 40px;
+  color: var(--branding-color);
 }
 p {
   font-weight: normal;
+  line-height: 30px;
+  color: var(--secondary-color);
+}
+img {
+  border-radius: 5px;
+
+  box-shadow: 5px 5px 10px rgba(73, 71, 91, 0.2);
 }
 .hero {
-  color: var(--primary-color);
   background-color: var(--secondary-color);
   text-align: center;
   padding: 180px 0;
 }
 .hero h1 {
-  font-size: 96px;
-  font-weight: 400;
+  color: var(--primary-color);
 }
+
 .hero h2 {
   font-weight: 300;
   color: var(--tint-color);
-  font-size: 30px;
-  line-height: 1.5;
 }
 .btn-branding {
   color: var(--primary-color);
@@ -52,6 +67,52 @@ p {
   transition: all 200ms ease-in-out;
 }
 .btn-branding:hover {
-  background-color: none;
+  color: var(--branding-color);
+  background-color: var(--tint-color);
   border: solid 1px var(--branding-color);
+}
+
+.index-img {
+  filter: grayscale(100%);
+  transition: all 200ms ease-in-out;
+}
+
+.index-img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+.btn-thumbnail {
+  color: var(--branding-color);
+  border: solid 1px var(--branding-color);
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 1;
+  padding: 8px 12px;
+  transition: all 200ms ease-in-out;
+}
+.btn-thumbnail:hover {
+  color: var(--primary-color);
+  background-color: var(--branding-color);
+}
+.project-description {
+  padding: 80px 60px;
+}
+@media (max-width: 992px) {
+  .hero {
+    padding: 90px 0;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  h3 {
+    font-size: 32px;
+  }
 }
