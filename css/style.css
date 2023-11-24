@@ -39,9 +39,11 @@ p {
   line-height: 30px;
   color: var(--secondary-color);
 }
+a {
+  color: var(--branding-color);
+}
 img {
   border-radius: 5px;
-
   box-shadow: 5px 5px 10px rgba(73, 71, 91, 0.2);
 }
 .hero {
@@ -95,7 +97,7 @@ img {
   background-color: var(--branding-color);
 }
 .project-description {
-  padding: 80px 60px;
+  padding: 150px 50px 0;
 }
 @media (max-width: 992px) {
   .hero {
@@ -113,6 +115,6 @@ img {
     text-align: center;
   }
   h3 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
