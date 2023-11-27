@@ -22,8 +22,9 @@ h5 {
   font-family: var(--display-font-family);
 }
 h1 {
-  font-size: 96px;
+  font-size: 56px;
   font-weight: 400;
+  color: var(--branding-color);
 }
 h2 {
   font-family: var(--default-font-family);
@@ -49,16 +50,23 @@ img {
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 180px 0;
+  padding: 160px 20px;
 }
 .hero h1 {
+  font-size: 96px;
   color: var(--primary-color);
 }
-
 .hero h2 {
   font-weight: 300;
   color: var(--tint-color);
 }
+.about-section {
+  padding: 160px 20px;
+}
+.about-section-content {
+  margin: 30px;
+}
+
 .btn-branding {
   color: var(--primary-color);
   background-color: var(--branding-color);
@@ -70,7 +78,7 @@ img {
 }
 .btn-branding:hover {
   color: var(--branding-color);
-  background-color: var(--tint-color);
+  background-color: var(--primary-color);
   border: solid 1px var(--branding-color);
 }
 
@@ -103,11 +111,17 @@ img {
   .hero {
     padding: 90px 5px;
   }
-  h1 {
-    font-size: 36px;
+  .about-section {
+    text-align: center;
+    padding: 0 5px 20px;
   }
+  h1,
+  .hero h1 {
+    font-size: 42px;
+  }
+
   h2 {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.2;
   }
   .project-description {
