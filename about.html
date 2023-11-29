@@ -7,7 +7,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>About me</title>
+    <title>
+      About Anna - Anna Sutherland | Graphic Designer
+    </title>
+    <meta
+      name="description"
+      content="Find out more about Anna Sutherland"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -56,6 +62,39 @@
     ></script>
   </head>
   <body>
+    <div class="container menu">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <img
+            src="images/logo.png"
+            class="logo"
+            alt="Anna Logo"
+            title="Homepage"
+        /></a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage">Home</a>
+          </li>
+          <li class="active">
+            <a href="/about.html" title="About Anna"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="/portfolio.html"
+              title="Anna's portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Anna"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-lg-7">
@@ -75,7 +114,9 @@
               laudantium veniam omnis repellendus beatae
               voluptate eum quam.
             </p>
-            <a class="btn btn-branding" href=""
+            <a
+              class="btn btn-branding"
+              href="/portfolio.html"
               >View my projects</a
             >
           </div>
@@ -83,20 +124,69 @@
         <div class="col-lg-5">
           <img
             src="/images/profile.png"
-            alt=""
-            class="img-fluid"
+            alt="Profile picture"
+            class="img-fluid profile-pic"
           />
         </div>
       </div>
+      <footer>
+        <div
+          class="work-inquiry-box d-flex justify-content-between mb-5"
+        >
+          <div>
+            <h3>Work Inquiry</h3>
+            <p>Let's work together!</p>
+          </div>
+          <div>
+            <a
+              href="/contact.html"
+              class="btn btn-branding mt-3"
+              title="Contact Anna"
+              >Contact me</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-4">
+          <a
+            href="/contact.html"
+            class="email-link"
+            title="Email Anna"
+            >lymel@hotmail.co.uk</a
+          >
+        </div>
+        <div
+          class="social-links d-flex justify-content-center"
+        >
+          <a
+            href="https://www.facebook.com/anna"
+            target="_blank"
+            title="Facebook profile"
+          >
+            <i class="fa-brands fa-facebook"></i></a
+          ><a
+            href="https://github.com/anna-sutherland"
+            target="_blank"
+            title="GitHub profile"
+          >
+            <i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/anna-sutherland"
+            target="_blank"
+            title="LinkedIn profile"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <p class="text-center mt-5">
+          This project was coded by Anna Sutherland, and is
+          <a
+            target="_blank"
+            href="https://github.com/AnnaLSutherland/portfolio-project"
+            >open-sourced</a
+          >
+          😃
+        </p>
+      </footer>
     </div>
-    <p>
-      <a
-        class="ms-5"
-        target="_blank"
-        href="https://github.com/AnnaLSutherland/portfolio-project"
-        >Open Source Code</a
-      >
-      by Anna Sutherland
-    </p>
   </body>
 </html>
