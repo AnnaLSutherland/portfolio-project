@@ -100,7 +100,6 @@ img {
 
 .index-img:hover {
   filter: grayscale(0%);
-  cursor: pointer;
 }
 .btn-thumbnail {
   color: var(--branding-color);
@@ -125,6 +124,11 @@ img {
 .logo {
   max-height: 60px;
   box-shadow: none;
+}
+.project-img {
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
 }
 nav {
   padding: 15px 0;
