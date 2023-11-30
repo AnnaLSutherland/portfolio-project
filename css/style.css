@@ -126,6 +126,8 @@ img {
   box-shadow: none;
 }
 .project-img {
+  display: block;
+  margin: 0 auto;
   max-height: 500px;
   display: block;
   margin: 0 auto;
